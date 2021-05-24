@@ -69,6 +69,8 @@ router.delete("/:post_id", auth, async (req, res) => {
     }
 })
 
+//some error in the code
+
 router.put("/like/:post_id", auth, async (req, res) => {
     try{
         const post = Post.findById(req.params.post_id)
